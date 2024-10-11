@@ -25,5 +25,13 @@ public class PessoaModel {
     private String email;
     private String endereco;
     private String senha;
-
+public PessoaModel(DadosCadastroPessoa dados ){
+    this.nome =dados.nome();
+    this.cpf = dados.cpf();
+    this.email = dados.email();
+    this.endereco = dados.endereco();
+    this.senha = dados.senha();
+    this.dataDeNascimento = dados.dataDeNascimento();
+    this.genero = dados.genero();
+}
 }
